@@ -51,4 +51,3 @@ jobs:
           file: ./Dockerfile
           tags: 
             latest
-            v${{github.run_number}}  
