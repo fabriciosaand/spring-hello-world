@@ -46,8 +46,9 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           context: ./
+          image: fabriciosaand/spring-hello-world
           push: true
           file: ./Dockerfile
           tags: 
-            fabriciosaand/spring-hello-world:latest
-            fabriciosaand/spring-hello-world:v${{github.run_number}}  
+            latest
+            v${{github.run_number}}  
