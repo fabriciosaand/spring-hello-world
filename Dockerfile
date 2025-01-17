@@ -1,5 +1,5 @@
 # Use a base image containing Java runtime
-FROM openjdk:17-jdk-alpine # Replace with your desired JDK version
+FROM openjdk:17-jdk-alpine
 
 # Set the working directory inside the container
 WORKDIR /app
