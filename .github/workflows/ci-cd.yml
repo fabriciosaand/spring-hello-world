@@ -41,3 +41,13 @@ jobs:
 
       - name: Run tests
         run: mvn test
+
+      - name: Build and push
+        uses: docker/build-push-action@v6
+        with:
+          context: ./
+          push: true
+          file: ./Dockerfile
+          tags: 
+            fabriciosaand/spring-hello-world:latest
+            fabriciosaand/spring-hello-world:v${{github.run_number}}  
