@@ -45,9 +45,8 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v6
         with:
-          context: ./
           image: fabriciosaand/spring-hello-world
           push: true
-          file: ./Dockerfile
+          dockerfile: Dockerfile
           tags: 
             latest
